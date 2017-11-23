@@ -8,11 +8,6 @@ exports.register = function(server, options, next) {
 
   const db = server.app.db;
 
-  //PLACEHOLDER
-  //--------------------------------------------------------------
-  //Here the routes definitions will be inserted in the next steps...
-
-
 server.route({  
     method: ['PUT','PATCH'],
     path: '/books/{id}',
@@ -31,16 +26,26 @@ server.route({
             if (result.n === 0) {
                 return reply(Boom.notFound());
             }
-
-            reply().code(204);
+            reply("Book Updated Successfully");
+            //reply().code(204);
         });
     },
     config: {
         validate: {
             payload: Joi.object({
-                title: Joi.string().min(10).max(50).optional(),
-                author: Joi.string().min(10).max(50).optional(),
-                isbn: Joi.number().optional()
+                title: Joi.string().min(3).max(50).optional(),
+                author: Joi.string().min(3).max(50).optional(),
+                isbn: Joi.number().optional(),
+                genre: Joi.string().min(3).max(50).optional(),
+                publicationinfo: {
+                        datepublished: Joi.string().min(3).max(50).optional(),
+                        publisher : Joi.string().min(3).max(50).optional()
+                },
+                copies: {
+                    edition : Joi.string().min(3).max(50).optional(),
+                    numberofcopies : Joi.number().optional(),
+                    available : Joi.number().optional()
+                }
             }).required().min(1)
         }
     }

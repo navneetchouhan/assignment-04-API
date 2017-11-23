@@ -2,10 +2,10 @@
 
 const Hapi = require('hapi');  
 const mongojs = require('mongojs');
-const getbooks =  require('./routes/getbooks');
-const addbooks =  require('./routes/addbooks');
-const updatebooks =  require('./routes/updatebooks');
-const deletebooks =  require('./routes/deletebooks');
+const getbooks =  require('./routes/books/getbooks');
+const addbooks =  require('./routes/books/addbooks');
+const updatebooks =  require('./routes/books/updatebooks');
+const deletebooks =  require('./routes/books/deletebooks');
 
 // Create a server with a host and port
 const server = new Hapi.Server();  
