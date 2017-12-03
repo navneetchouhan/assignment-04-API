@@ -42,9 +42,11 @@ PATCH
 <br><br>
 DELETE
 <br>
-**This will delete a book by id**
-<br>
 '/books/{id}'
+<br>
+**This will delete a book by id**
+
+### For testing purpose, Body raw data for POST is avaliable in addData.txt
 
 
 
