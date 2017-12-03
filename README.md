@@ -3,11 +3,11 @@ Book Lending API for WMDD-4935 class
 
 
 # Overview
-A Lending API which allows you to add,update,get and delete books.
+A Book Lending API which allows you to add,update,get and delete books.
 
 **It is authenticated with JWT Auth**
 
-**All the requests send should have bearer token**
+**All the requests sent should have bearer token**
 
 ## Token is:
 
