@@ -26,7 +26,21 @@ GET
 '/books'  
 **(You can pass parameter such as limit,id isbn, title, genre , author and if you don't pass any query parameter, it will get all books)**
 <br>
-**The paramater passed will also work like search when you use it for title,genre and author**
+**The paramater passed will also work like search when you use it for title,genre and author (It is not case-sensitive, so 'xyz' and 'XYZ' will get you the same results)**
+<br>
+eg:
+<br>
+/books?author=one
+<br>
+/books?title=one
+<br>
+/books?limit=5
+<br>
+/books?genre=one
+<br>
+/books?isbn=12345
+<br>
+etc
 <br><br><br>
 GET
 <br>
