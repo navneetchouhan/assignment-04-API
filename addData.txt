@@ -1,0 +1,15 @@
+{
+                "title": "Book Api Try",
+                "author": "Navneet Kaur Chauhan",
+                "isbn": 100283560,
+                "genre": "Server Side Scripting",
+                "publicationinfo": {
+                		"datepublished": "19-11-2017",
+                		"publisher" : "Langara College"
+                },
+                "copies": {
+                	"edition" : "edition one",
+                	"numberofcopies" : 10,
+                	"available" : 10
+                }
+}
